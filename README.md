@@ -1,3 +1,23 @@
-# Noteful Server
+# Noteful API
 
-This is the back-end for the noteful app
+Once started, this will run a local API server on `http://localhost:8000` by default.
+
+There are two top level endpoints:
+
+- /folders
+- /notes
+
+Both support GET, POST, PATCH, and DELETE. For PATCH and DELETE requests you must supply the respective id in the endpoint's path.
+
+For example:
+
+- GET /folders
+- GET /notes
+- POST /folders
+- POST /notes
+- PATCH /folders/{folder-id}
+- PATCH /notes/{note-id}
+- DELETE /folders/{folder-id}
+- DELETE /notes/{note-id}
+
+To start the server, run `npm start`
