@@ -54,7 +54,7 @@ notesRouter
         if (!note) {
           return res
             .status(400)
-            .json({ error: { message: `Note doens't exist` } });
+            .json({ error: { message: `Note doesn't exist` } });
         }
         res.note = note;
         next();
