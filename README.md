@@ -2,7 +2,7 @@
 
 Once started, this will run a local API server on `http://localhost:8000` by default.
 
-There are two top level endpoints:
+## Endpoints
 
 - /folders
 - /notes
@@ -19,5 +19,7 @@ For example:
 - PATCH /notes/{note-id}
 - DELETE /folders/{folder-id}
 - DELETE /notes/{note-id}
+
+## Start server
 
 To start the server, run `npm start`
