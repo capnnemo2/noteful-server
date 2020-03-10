@@ -76,7 +76,9 @@ foldersRouter
     if (numberOfValues === 0) {
       return res
         .status(400)
-        .json({ error: { message: `Requestbody must contain 'folder name'` } });
+        .json({
+          error: { message: `Request body must contain 'folder name'` }
+        });
     }
 
     FoldersService.updateFolder(
