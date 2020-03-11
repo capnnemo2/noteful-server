@@ -76,10 +76,13 @@ notesRouter
     const noteToUpdate = { note_name, folder_id, content };
 
     const numberOfValues = Object.values(noteToUpdate).filter(Boolean).length;
+    console.log(noteToUpdate);
+    console.log(numberOfValues);
+    console.log(req.body);
     if (numberOfValues === 0) {
       return res.status(400).json({
         error: {
-          message: `Request body must contain either 'note_name' or 'content'`
+          message: `Request body must contain either 'note_name' 'folder_name', or 'content'`
         }
       });
     }
